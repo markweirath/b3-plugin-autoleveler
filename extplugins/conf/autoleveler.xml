@@ -1,0 +1,8 @@
+<configuration plugin="xlraddonsurt">
+	<settings name="autoleveler">
+		<set name="enable">True</set>
+		<set name="user">25</set>
+		<set name="regular">200</set>
+		<set name="moderator">0</set>
+	</settings>
+</configuration>
