@@ -1,7 +1,8 @@
-<configuration plugin="xlraddonsurt">
-	<settings name="autoleveler">
+<configuration plugin="autoleveler">
+	<settings name="settings">
 		<set name="enable">True</set>
-		<set name="user">25</set>
+		<!-- The next settings defines the number of connections for a user to be put in this group - 0 disables. -->
+    <set name="user">25</set>
 		<set name="regular">200</set>
 		<set name="moderator">0</set>
 	</settings>

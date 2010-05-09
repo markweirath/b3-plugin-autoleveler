@@ -17,9 +17,9 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #
 # Changelog:
-#
+# 09/05/2010 - 1.0.1 - xlr8or - bugfix in LoadConfig naming convention
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 __author__  = 'xlr8or'
 
 import b3
@@ -72,25 +72,25 @@ class AutolevelerPlugin(b3.plugin.Plugin):
 
   def LoadAutoLeveler(self):
     try:
-      self._al_enable = self.config.getboolean('autoleveler', 'enable')
+      self._al_enable = self.config.getboolean('settings', 'enable')
     except:
       self.debug('using default setting')
       pass
     self.debug(self._al_enable)
     try:
-      self._al_user = self.config.getint('autoleveler', 'user')
+      self._al_user = self.config.getint('settings', 'user')
     except:
       self.debug('using default setting')
       pass
     self.debug(self._al_user)
     try:
-      self._al_regular = self.config.getint('autoleveler', 'regular')
+      self._al_regular = self.config.getint('settings', 'regular')
     except:
       self.debug('using default setting')
       pass
     self.debug(self._al_regular)
     try:
-      self._al_moderator = self.config.getint('autoleveler', 'moderator')
+      self._al_moderator = self.config.getint('settings', 'moderator')
     except:
       self.debug('using default setting')
       pass
